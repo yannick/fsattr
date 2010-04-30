@@ -6,11 +6,11 @@ require 'sysinfo'
 File.class_eval do
 
   if (SysInfo.new.impl == :osx)
-    require 'lib/fsattr/fsattr-osx'
+    require 'fsattr/fsattr-osx'
     include FSattrOSX 
   end
   if (SysInfo.new.impl == :linux)
-    require 'lib/fsattr/fsattr-linux'
+    require 'fsattr/fsattr-linux'
     include FSattrLinux 
   end
   alias_method :fsattr_get, :fsattr_fget
