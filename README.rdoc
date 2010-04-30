@@ -1,16 +1,15 @@
 = fsattr
 
-Description goes here.
+fsattr helps to set, get and list extended file attributes on os X and Linux.
 
-== Note on Patches/Pull Requests
- 
-* Fork the project.
-* Make your feature addition or bug fix.
-* Add tests for it. This is important so I don't break it in a
-  future version unintentionally.
-* Commit, do not mess with rakefile, version, or history.
-  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
-* Send me a pull request. Bonus points for topic branches.
+Help on adding Windows compatibilty would be nice.
+
+Usage:  
+f = File.open "/tmp/blah", "w"
+f.fsattr_set "hello", "world"
+f.fsattr_get "hello"
+f.fsattr_list
+f.close
 
 == Copyright
 
