@@ -5,10 +5,15 @@ fsattr helps to set, get and list extended file attributes on os X and Linux.
 Help on adding Windows compatibilty would be nice.
 
 Usage:  
+
 f = File.open "/tmp/blah", "w"
+
 f.fsattr_set "hello", "world"
+
 f.fsattr_get "hello"
+
 f.fsattr_list
+
 f.close
 
 == Copyright
